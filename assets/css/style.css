@@ -1,0 +1,17 @@
+.container {
+    background-color: blueviolet;
+    }  
+
+
+.portada {
+    background-image: url("../img/wallet.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}

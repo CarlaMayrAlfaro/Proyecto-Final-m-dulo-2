@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+     <!-- link css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- link Js -->
+    <script defer src="./assets/js/login.js"></script>
+   
+    <!-- iconos -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBar -->
+
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark" id="barra-de-navegacion">
+        <div class="container">
+            <a class="navbar-brand" href="#">Alky-Wallet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link"  href="menu.html">Menu</a>
+                    <a class="nav-link"  href="deposit.html">Depositar</a>
+                    <a class="nav-link" href="sendmoney.html">Enviar Dinero</a>
+                    <a class="nav-link" href="transactions.html">Transacciones</a>
+                    <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+</section>
+
+   <header>
+        <h1 class="text-center mt-5 text-primary">Inicio de Sesión <i class="bi bi-wallet2"></i></h1>
+    </header>
+
+    <main class="container py-4 p-5">
+        <div class="col-12 col-md-8 col-lg-4 row justify-content-center">
+            <!-- Alerta de éxito -->
+            <div id="alertSuccess" class="alert alert-success alert-dismissible fade show d-none" role="alert">
+                <i class="bi bi-check-circle"></i>
+                <strong>¡Éxito!</strong> Ha iniciado sesión correctamente.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+            <!-- Alerta de error -->
+            <div id="alertError" class="alert alert-danger alert-dismissible fade show d-none" role="alert">
+                <i class="bi bi-exclamation-circle"></i>
+                <strong>¡Error!</strong> Email y/o contraseña incorrectos.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+         <form id="loginForm">
+    
+           <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="ejemplo@ejemplo.cl" required>
+            </div>
+              
+                
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="123456" required>
+            </div>
+    
+                <div class="mb-3">
+                <input type="submit" value="Inicio Sesión" class="btn btn-primary" id="btn-secondary" input>
+            </div>
+         </form>
+        </div>
+    </main>
+    
+<!-- Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./assets/js/script.js"></script>
+
+</body>
+</html>
